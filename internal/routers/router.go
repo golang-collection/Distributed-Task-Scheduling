@@ -23,7 +23,7 @@ func NewRouter() *gin.Engine {
 	r.Use(middleware.ContextTimeout(global.AppSetting.DefaultContextTimeout))
 	r.Use(middleware.Translations())
 
-	r.StaticFile("/", "web/index.html")
+	r.StaticFile("/", "/Users/super/develop/Distributed-Task-Scheduling/internal/routers/web/index.html")
 	svcd := r.Group("/sd")
 	{
 		svcd.GET("/health", sd.HealthCheck)

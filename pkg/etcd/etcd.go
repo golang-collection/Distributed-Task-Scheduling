@@ -23,11 +23,11 @@ func NewEtcdEngine(etcdSetting *setting.EtcdSettingS) (client *clientv3.Client, 
 	if client, err = clientv3.New(config); err != nil {
 		return
 	}
-	if client == nil{
+	if client == nil {
 		err = errors.New("init etcd error")
 		return
 	}
-	if _, err = client.Dial(etcdSetting.Endpoint); err != nil{
+	if _, err = client.Dial(etcdSetting.Endpoint); err != nil {
 		return
 	}
 	kv = clientv3.NewKV(client)

@@ -15,7 +15,7 @@ import (
 **/
 
 func main() {
-	initConf.Init("/Users/super/develop/go-crawler-distributed/configs/")
+	initConf.Init("/Users/super/develop/Distributed-Task-Scheduling/configs")
 	if err := worker.NewScheduler(); err != nil {
 		log.Printf("init NewScheduler err: %v\n", err)
 		return
