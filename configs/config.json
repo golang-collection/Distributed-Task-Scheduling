@@ -19,9 +19,9 @@
   "Database": {
     "DBType": "mysql",
     "Username": "root",
-    "Password": "password",
-    "Host": "127.0.0.1:3306",
-    "DBName": "supertools",
+    "Password": "example",
+    "Host": "139.9.131.190:3306",
+    "DBName": "task_scheduling",
     "Charset": "utf8mb4",
     "ParseTime": "True",
     "MaxIdleConns": 10,
@@ -46,12 +46,12 @@
     ]
   },
   "MongoDB": {
-    "Url": "mongodb://root:password@localhost:27017",
+    "Url": "mongodb://root:password@139.9.131.190:27017",
     "MaxPoolSize": 20,
     "Timeout": 5
   },
   "Etcd": {
-    "Endpoint": "127.0.0.1:2379",
+    "Endpoint": "139.9.131.190:2379",
     "DialTimeout": 5000,
     "DialKeepAliveTime": 1,
     "DialKeepAliveTimeout": 2
